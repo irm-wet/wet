@@ -1,6 +1,8 @@
+'use client';
+
 import styled from 'styled-components';
 
 export const HeaderLayout = styled.div`
-  height: 200px;
-  background: red;
+  height: 100px;
+  background-color: skyblue;
 `;

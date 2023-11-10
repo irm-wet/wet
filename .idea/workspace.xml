@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfe497de-6435-4583-b7d7-ef01eb7346ab" name="Changes" comment="" />
+    <list default="true" id="dfe497de-6435-4583-b7d7-ef01eb7346ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/components/Footer/Footer.styled.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Footer/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/common/axiosInstance.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/common/common.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/restaurantList/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/css/root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/static/images/CDD.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Header/Header.styled.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header/Header.styled.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/intro/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/intro/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +39,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2XhFJTxutVdVj6uSstiXACGbBEF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,23 +54,30 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/cdd/Documents/development/wet",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "/Users/cdd/Documents/development/wet/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/cdd/Documents/development/wet/node_modules/typescript/lib",
+    "prettierjs.PrettierConfiguration.Package": "/Users/cdd/Documents/workspace/wet/node_modules/prettier",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.15527952",
+    "settings.editor.selected.configurable": "editing.templates",
+    "ts.external.directory.path": "/Users/cdd/Documents/workspace/wet/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/components/Header" />
+      <recent name="$PROJECT_DIR$/app/dataFetch" />
+      <recent name="$PROJECT_DIR$/app/reactQueryDashboard" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/components/common" />
+      <recent name="$PROJECT_DIR$/app/components/Header" />
+      <recent name="$PROJECT_DIR$/app/static/images" />
     </key>
   </component>
   <component name="RunManager">
@@ -74,6 +103,9 @@
       <workItem from="1699073950379" duration="2029000" />
       <workItem from="1699155020266" duration="8457000" />
       <workItem from="1699451416192" duration="4933000" />
+      <workItem from="1699504920003" duration="12399000" />
+      <workItem from="1699517425453" duration="198000" />
+      <workItem from="1699517636350" duration="17866000" />
     </task>
     <servers />
   </component>
@@ -87,5 +119,20 @@
     <option featureType="dependencySupport" implementationName="javascript:npm:webpack" />
     <option featureType="dependencySupport" implementationName="executable:kubectl" />
     <option featureType="dependencySupport" implementationName="javascript:npm:next" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
