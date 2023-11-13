@@ -4,6 +4,7 @@ import './static/css/root.scss';
 import React from 'react';
 import Header from '@/app/components/Header/Header';
 import Footer from '@/app/components/Footer/Footer';
+import RecoilRootWrapper from '@/app/components/RecoilRootWrapper/RecoilRootWrapper';
 
 export const metadata: Metadata = {
   title: 'We EaT',
@@ -16,7 +17,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <div className={'container'}>
           <Header />
-          <div className={'bodyContainer'}>{children}</div>
+          <div className={'bodyContainer'}>
+            <RecoilRootWrapper>{children}</RecoilRootWrapper>
+          </div>
           <Footer />
         </div>
       </body>

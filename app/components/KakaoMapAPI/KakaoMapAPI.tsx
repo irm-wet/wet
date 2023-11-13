@@ -1,6 +1,8 @@
-'use client'
+'use client';
 
 import React, { useEffect } from 'react';
+import { useRecoilState } from 'recoil';
+import { mapLocationState } from '@/app/store/kakaoMapStore';
 
 declare global {
   interface Window {
@@ -9,6 +11,8 @@ declare global {
 }
 
 const KakaoMapAPI: React.FC = () => {
+  const [mapLocation, setMapLocation] = useRecoilState(mapLocationState);
+
   useEffect(() => {
     const kakaoMapScript = document.createElement('script');
     kakaoMapScript.async = false;
@@ -30,9 +34,16 @@ const KakaoMapAPI: React.FC = () => {
 
         const geocoder = new window.kakao.maps.services.Geocoder();
 
-        geocoder.addressSearch('서울시 강남구 역삼로 8길 15, 홍우빌딩', function (result: any, status: any) {
+        geocoder.addressSearch('서울시 관악구', function (result: any, status: any) {
           if (status === window.kakao.maps.services.Status.OK) {
-            const coords = new window.kakao.maps.LatLng(result[0].y, result[0].x);
+            const coords = new window.kakao.maps.LatLng(result[0].y, result[0].x); // y: 위도, x: 경도
+
+            const newLocation = {
+              latitude: result[0].y,
+              longtitude: result[0].x,
+            };
+
+            setMapLocation(prev => newLocation);
 
             const marker = new window.kakao.maps.Marker({
               map: map,
@@ -54,11 +65,11 @@ const KakaoMapAPI: React.FC = () => {
   }, []);
 
   return (
-      <main className="w-full flex flex-col items-center justify-center pt-4">
-        <div className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh]">
-          <div id="map" style={{ width: '50%', height: '50%' }}></div>
-        </div>
-      </main>
+    <main className="flex flex-col items-center justify-center">
+      <div className="w-full max-w-md p-4 bg-white rounded-lg">
+        <div id="map" style={{ height: '20rem' }}></div>
+      </div>
+    </main>
   );
 };
 
