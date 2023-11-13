@@ -7,8 +7,12 @@ import { HeaderLayout } from '@/app/components/Header/Header.styled';
 const Header = () => {
   return (
     <HeaderLayout>
-      <Link href={'/'}>Home</Link>
-      <Link href={'/restaurantList'}>RestaurantList</Link>
+      <div className={'h-full text-white font-semibold text-xl'}>
+        <div className={'h-full flex justify-center items-center gap-4'}>
+          <Link href={'/'}>Home</Link>
+          <Link href={'/restaurantList'}>RestaurantList</Link>
+        </div>
+      </div>
     </HeaderLayout>
   );
 };

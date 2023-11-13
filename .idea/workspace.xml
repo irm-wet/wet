@@ -5,22 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfe497de-6435-4583-b7d7-ef01eb7346ab" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/Footer/Footer.styled.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Footer/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/common/axiosInstance.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/common/common.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/restaurantList/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/css/root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/static/images/CDD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/KakaoMapAPI/KakaoMapAPI.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dev/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Header/Header.styled.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header/Header.styled.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/intro/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/intro/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/restaurantList/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/restaurantList/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/root.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/root.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -46,38 +42,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/cdd/Documents/development/wet",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "/Users/cdd/Documents/workspace/wet/node_modules/prettier",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.15527952",
-    "settings.editor.selected.configurable": "editing.templates",
-    "ts.external.directory.path": "/Users/cdd/Documents/workspace/wet/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cdd/Documents/development/wet&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/cdd/Documents/workspace/wet/node_modules/prettier&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.15527952&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/cdd/Documents/workspace/wet/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/components/KakaoMapAPI" />
+      <recent name="$PROJECT_DIR$/app/components" />
       <recent name="$PROJECT_DIR$/app/dataFetch" />
       <recent name="$PROJECT_DIR$/app/reactQueryDashboard" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/app/components/Header" />
-      <recent name="$PROJECT_DIR$/app/static/images" />
     </key>
   </component>
   <component name="RunManager">
@@ -105,7 +101,9 @@
       <workItem from="1699451416192" duration="4933000" />
       <workItem from="1699504920003" duration="12399000" />
       <workItem from="1699517425453" duration="198000" />
-      <workItem from="1699517636350" duration="17866000" />
+      <workItem from="1699517636350" duration="25264000" />
+      <workItem from="1699608744340" duration="3062000" />
+      <workItem from="1699611878955" duration="5873000" />
     </task>
     <servers />
   </component>
