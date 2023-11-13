@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 
 export const FooterLayout = styled.div`
-  height: 50px;
+  padding: 1.5rem;
 
-  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

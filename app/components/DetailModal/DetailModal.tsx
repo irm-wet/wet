@@ -60,7 +60,7 @@ const DetailModal: React.FC<DetailModalProps> = ({ isOpen, restaurant_name, rest
                     type="button"
                     className="inline-flex w-full justify-center rounded-md bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 sm:ml-3 sm:w-auto"
                     onClick={() => {
-                      const kakaoMapCustomUrl = `kakaomap://route?sp=37.537229,127.005515&ep=${Number(mapLocation[0].latitude)},${Number(mapLocation[0].longtitude)}&by=FOOT`;
+                      const kakaoMapCustomUrl = `kakaomap://route?sp=37.493069715524456,127.03414990921496&ep=${Number(mapLocation[0].latitude)},${Number(mapLocation[0].longtitude)}&by=FOOT`;
                       window.location.href = kakaoMapCustomUrl;
                     }}>
                     카카오맵 열기
