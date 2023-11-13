@@ -10,7 +10,12 @@ declare global {
   }
 }
 
-const KakaoMapAPI: React.FC = () => {
+interface KakaoMapAPIProps {
+  restaurant_name: string;
+  restaurant_location: string;
+}
+
+const KakaoMapAPI: React.FC<KakaoMapAPIProps> = ({ restaurant_name, restaurant_location }) => {
   const [mapLocation, setMapLocation] = useRecoilState(mapLocationState);
 
   useEffect(() => {
@@ -34,7 +39,7 @@ const KakaoMapAPI: React.FC = () => {
 
         const geocoder = new window.kakao.maps.services.Geocoder();
 
-        geocoder.addressSearch('서울시 관악구', function (result: any, status: any) {
+        geocoder.addressSearch(restaurant_location, function (result: any, status: any) {
           if (status === window.kakao.maps.services.Status.OK) {
             const coords = new window.kakao.maps.LatLng(result[0].y, result[0].x); // y: 위도, x: 경도
 
@@ -50,8 +55,10 @@ const KakaoMapAPI: React.FC = () => {
               position: coords,
             });
 
+            const infoContent = `<div style="width:150px;text-align:center;padding:6px 0;">${restaurant_name}</div>`;
+
             const infowindow = new window.kakao.maps.InfoWindow({
-              content: '<div style="width:150px;text-align:center;padding:6px 0;">우리회사</div>',
+              content: infoContent,
             });
             infowindow.open(map, marker);
 

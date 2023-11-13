@@ -1,13 +1,20 @@
 'use client';
 
-import { Fragment, useEffect, useRef, useState } from 'react';
+import React, { Fragment, useEffect, useRef, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import KakaoMapAPI from '@/app/components/KakaoMapAPI/KakaoMapAPI';
 import { useRecoilState } from 'recoil';
 import { mapLocationState } from '@/app/store/kakaoMapStore';
+import { modalOpenState } from '@/app/store/detailModalStore';
 
-const DetailModal = ({ isOpen }) => {
-  const [open, setOpen] = useState(isOpen);
+interface DetailModalProps {
+  isOpen: boolean;
+  restaurant_name: string;
+  restaurant_location: string;
+}
+
+const DetailModal: React.FC<DetailModalProps> = ({ isOpen, restaurant_name, restaurant_location }) => {
+  const [open, setOpen] = useRecoilState(modalOpenState);
   const mapLocation = useRecoilState(mapLocationState);
 
   const cancelButtonRef = useRef(null);
@@ -38,7 +45,7 @@ const DetailModal = ({ isOpen }) => {
                   <div className="sm:flex sm:items-start">
                     <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                       <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                        음식점 위치
+                        {restaurant_name}
                       </Dialog.Title>
                       <div className="mt-2">
                         <p className="text-sm text-gray-500">우측의 확대, 축소 바를 활용하여 유동적으로 위치를 찾으실 수 있습니다.</p>
@@ -47,7 +54,7 @@ const DetailModal = ({ isOpen }) => {
                     </div>
                   </div>
                 </div>
-                <KakaoMapAPI />
+                <KakaoMapAPI restaurant_name={restaurant_name} restaurant_location={restaurant_location} />
                 <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
                   <button
                     type="button"
