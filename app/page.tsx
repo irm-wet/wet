@@ -1,18 +1,19 @@
 'use client';
 
 import Image from 'next/image';
+import KakaoLogin from './static/images/kakao_login_medium_narrow.png';
 import { redirect } from 'next/navigation';
 import ButtonElement from './components/ButtonElement/ButtonElement';
 import axios from 'axios';
 
 export default function Home() {
-  const handleButtonClick = async () => {
-    try {
-      const response = await axios.get('/api/');
-      console.log(response);
-    } catch (e) {
-      console.log(e);
-    }
+  const handleKakaoLogin = () => {
+    alert('TEST');
   };
-  return <ButtonElement text={'TEST ME'} handleButtonClick={handleButtonClick} />;
+
+  return (
+    <div className={'flex justify-center align-center'}>
+      <Image src={KakaoLogin} onClick={handleKakaoLogin} style={{ cursor: 'pointer' }} />
+    </div>
+  );
 }

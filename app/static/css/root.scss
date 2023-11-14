@@ -6,5 +6,11 @@
 }
 
 .cardContainer {
-  height: 210px;
+  height: 13rem;
+
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  //display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
