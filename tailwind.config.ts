@@ -8,6 +8,29 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        rolling: {
+          '0%': {
+            transform: 'translateY(0)',
+          },
+          '100%': {
+            transform: 'translateY(calc(-100% * 15))',
+          },
+        },
+        heartbeat: {
+          '0%': {
+            transform: 'scale(1)',
+          },
+          '50%': {
+            transform: 'scale(0.8)',
+          },
+        },
+      },
+      animation: {
+        rolling: 'rolling 0.5s linear infinite',
+        breaking: 'rolling 2s linear infinite',
+        heartbeat: 'heartbeat 0.5s linear 2',
+      },
     },
   },
   plugins: [],

@@ -8,12 +8,13 @@ function RouletteModal() {
       <Modal.ModalOverlay />
       <Modal.ModalContents>
         <Roulette>
-          <Roulette.RouletteBody>
+          <Roulette.RouletteContainer>
+            <Roulette.RouletteSlot />
             <Roulette.RouletteBottons>
               <Roulette.RouletteRollBotton>Roll</Roulette.RouletteRollBotton>
               <Roulette.RouletteStopButton>Stop</Roulette.RouletteStopButton>
             </Roulette.RouletteBottons>
-          </Roulette.RouletteBody>
+          </Roulette.RouletteContainer>
         </Roulette>
       </Modal.ModalContents>
     </Modal>
