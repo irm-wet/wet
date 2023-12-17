@@ -2,8 +2,8 @@
 const nextConfig = {
   // output: 'export',
   env: {
-    superbaseUrl: process.env.superbaseUrl,
-    superbaseKey: process.env.superbaseKey,
+    superbaseUrl: process.env.supabaseUrl,
+    superbaseKey: process.env.supabaseKey,
   },
   compiler: {
     styledComponents: true,
