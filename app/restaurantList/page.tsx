@@ -7,11 +7,11 @@ import RestaurantList, { RestaurantListProps } from '@/app/restaurantList/Restau
 export const revalidate = 60; // 최대 1시간마다 다시 유효성을 검사합니다.
 
 export default async function () {
-  if (!process.env.superbaseUrl || !process.env.superbaseKey) {
+  if (!process.env.supabaseUrl || !process.env.supabaseKey) {
     throw new Error('개발환경이라면 .env 파일을 확인해주세요');
   }
 
-  const supabase = createClient(process.env.superbaseUrl, process.env.superbaseKey);
+  const supabase = createClient(process.env.supabaseUrl, process.env.supabaseKey);
   const { data: restaurantList }: any = await supabase.from('restaurantList').select();
 
   return (
