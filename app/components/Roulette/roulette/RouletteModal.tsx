@@ -1,22 +1,22 @@
-import { Modal } from '@/app/components/Roulette/Modal';
-import Roulette from './Roulette';
+import { Modal } from '../Modal';
+import { Roulette } from './Roulette';
 
 function RouletteModal() {
   return (
     <Modal>
       <Modal.OpenButton>Roulette Modal</Modal.OpenButton>
-      <Modal.ModalOverlay />
-      <Modal.ModalContents>
+      <Modal.Overlay />
+      <Modal.Contents>
         <Roulette>
-          <Roulette.RouletteContainer>
-            <Roulette.RouletteSlot />
-            <Roulette.RouletteBottons>
-              <Roulette.RouletteRollBotton>Roll</Roulette.RouletteRollBotton>
-              <Roulette.RouletteStopButton>Stop</Roulette.RouletteStopButton>
-            </Roulette.RouletteBottons>
-          </Roulette.RouletteContainer>
+          <Roulette.Contents>
+            <Roulette.Slot />
+            <Roulette.Buttons>
+              <Roulette.RollButton>Roll</Roulette.RollButton>
+              <Roulette.StopButton>Stop</Roulette.StopButton>
+            </Roulette.Buttons>
+          </Roulette.Contents>
         </Roulette>
-      </Modal.ModalContents>
+      </Modal.Contents>
     </Modal>
   );
 }

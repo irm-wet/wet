@@ -1,15 +1,15 @@
-import { Modal } from '@/app/components/Roulette/Modal';
+import { Modal } from '../Modal';
 
 function BasicModal() {
   return (
     <Modal>
       <Modal.OpenButton>Basic Modal</Modal.OpenButton>
-      <Modal.ModalOverlay />
-      <Modal.ModalContents>
-        <Modal.ModalTitle>모달 타이틀</Modal.ModalTitle>
-        <Modal.ModalBody />
+      <Modal.Overlay />
+      <Modal.Contents>
+        <Modal.Title>모달 타이틀</Modal.Title>
+        <Modal.Body>모달 내용</Modal.Body>
         <Modal.CloseButton />
-      </Modal.ModalContents>
+      </Modal.Contents>
     </Modal>
   );
 }
